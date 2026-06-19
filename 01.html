@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kettu Café</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-amber-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-amber-900 text-white fixed top-0 w-full shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center py-5 px-6">
+
+            <a href="#inicio" class="hover:text-amber-300">
+                Inicio
+            </a>
+
+            <a href="#nosotros" class="hover:text-amber-300">
+                Quiénes Somos
+            </a>
+
+            <a href="#menu" class="hover:text-amber-300">
+                Menú
+            </a>
+
+            <a href="#contacto" class="hover:text-amber-300">
+                Contacto
+            </a>
+
+            <div class="relative group">
+
+                <span class="cursor-pointer hover:text-amber-300">
+                    Redes Sociales ▼
+                </span>
+
+                <div class="absolute hidden group-hover:block bg-white text-black rounded-lg shadow-lg w-40 top-full right-0">
+
+                    <a href="https://instagram.com/kettucafe/"
+                        target="_blank"
+                        class="flex items-center px-4 py-2 hover:bg-gray-100">
+                            <img src="instagram.png"
+                                alt="Instagram"
+                                class="w-5 h-5 mr-2">
+
+                            Instagram
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/b2AB9hSJweGzbdss5"
+                        target="_blank"
+                        class="flex items-center px-4 py-2 hover:bg-gray-100">
+                            <img src="maps.png"
+                                alt="Instagram"
+                                class="w-5 h-5 mr-2">
+
+                            Ubicacion
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="inicio" class="h-screen flex flex-col justify-center items-center text-center px-6">
+
+        <h2 class="text-6xl font-bold text-amber-900 mb-4">
+            Bienvenidos a Kettu Café
+        </h2>
+
+        <p class="text-xl max-w-2xl"> 
+            Un espacio donde el aroma del café acompaña encuentros, historias y momentos inolvidables.</p>
+
+        <a href="#menu"
+           class="mt-8 bg-amber-700 text-white px-6 py-3 rounded-xl hover:bg-amber-800">
+            Ver Menú
+        </a>
+
+    </section>
+
+    <!-- QUIENES SOMOS -->
+    <section id="nosotros" class="min-h-screen flex items-center">
+
+        <div class="container mx-auto px-8">
+
+            <h2 class="text-4xl font-bold text-center text-amber-900 mb-8">
+                Quiénes Somos
+            </h2>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+
+                <p class="mb-4">
+                    Kettu Café es una cafetería temática creada por estudiantes
+                    apasionados por el café y el diseño.
+                </p>
+
+                <p class="mb-4"> <!-- esto sirve para que haya un enter entre los parrafos -->
+                    Nuestro objetivo es ofrecer un lugar cómodo donde las personas
+                    puedan estudiar, trabajar, leer o compartir momentos con amigos.
+                </p>
+
+                <p>
+                    Este proyecto fue desarrollado para la materia Instalación de
+                    Accesorios y Periféricos Externos utilizando HTML y Tailwind CSS.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu" class="min-h-screen py-20">
+
+        <h2 class="text-4xl font-bold text-center text-amber-900 mb-10">
+            Nuestro Menú
+        </h2>
+
+        <div class="container mx-auto grid md:grid-cols-3 gap-8 px-8">
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2"> Flat White</h3>
+                <p>2 shot de cafe + leche.</p>
+                <p class="mt-3 font-bold">$3200</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2"> Capuccino</h3>
+                <p>shot de cafe + leche.</p>
+                <p class="mt-3 font-bold">$2500</p>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2"> Roll de canela</h3>
+                <p>Con frosting y chocolate.</p>
+                <p class="mt-3 font-bold">$4500</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2"> Cookies</h3>
+                <p>Galletas con chips de chocolate, pistacho, nutella
+                    (preguntar variedad del dia).</p>
+                <p class="mt-3 font-bold">$1800</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2"> Croissant azul</h3>
+                <p>Crema de queso azul y pistachos.</p>
+                <p class="mt-3 font-bold">$4200</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2"> Medialunas</h3>
+                <p>De manteca o grasa.</p>
+                <p class="mt-3 font-bold">$1500</p>
+            </div>
+
+        </div>
+
+        <!-- PROMOS -->
+        <div class="container mx-auto mt-16 px-8">
+
+            <div class="bg-amber-200 p-8 rounded-xl text-center">
+
+                <h3 class="text-3xl font-bold mb-4">
+                    Promociones
+                </h3>
+
+                <p> Café + Cookie: $3500</p>
+                <p> 15% de descuento para estudiantes</p>
+                <p> 2x1 en cafés todos los viernes</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="min-h-screen py-20">
+
+        <h2 class="text-4xl font-bold text-center text-amber-900 mb-10">
+            Contacto
+        </h2>
+
+        <div class="container mx-auto max-w-3xl bg-white p-8 rounded-xl shadow-lg">
+
+            <form>
+
+                <div class="grid md:grid-cols-2 gap-4">
+
+                    <input
+                        type="text"
+                        placeholder="Apellido y Nombre"
+                        class="border p-3 rounded-lg">
+
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        class="border p-3 rounded-lg">
+
+                    <input
+                        type="tel"
+                        placeholder="WhatsApp"
+                        class="border p-3 rounded-lg">
+
+                    <input
+                        type="date"
+                        class="border p-3 rounded-lg">
+
+                </div>
+
+                <div class="mt-4">
+
+                    <label class="block mb-2 font-semibold">
+                        Género
+                    </label>
+
+                    <select class="border p-3 rounded-lg w-full">
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                        <option>Otro</option>
+                    </select>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <label class="block mb-2 font-semibold">
+                        Adjuntar CV (PDF)
+                    </label>
+
+                    <input
+                        type="file"
+                        accept=".pdf"
+                        class="border p-3 rounded-lg w-full">
+
+                </div>
+
+                <textarea
+                    rows="5"
+                    placeholder="Comentarios..."
+                    class="border p-3 rounded-lg w-full mt-4"></textarea>
+
+                <div class="text-center mt-6">
+
+                    <a href="mailto:kettucafe@gmail.com"
+                       class="bg-amber-700 text-white px-6 py-3 rounded-xl hover:bg-amber-800">
+                        Enviar Consulta
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
